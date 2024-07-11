@@ -1,5 +1,6 @@
 # Evolutionary Algorithms For Task Learning
 contains 3 different evolution engines for task learning in RSNNs model for sine wave, robot arm, and moving digit task
+all engines are run using the standard rssn_env environment described in slack + download of the seaborn module for plotting
 
 
 ### Sine Wave Task
