@@ -14,7 +14,7 @@ The RSNN is constructed using the connectivity and neurons as constructed above.
 A genetic encoding and decoding function converts a model to a genetic representation by concatenating all of the parameters into a numpy array and decodes the gene back into the model format by reshaping the gene to the original parameter sizes.
 
 The main evolution class runs the evolutionary process through the evolve function. It first generates an initial population of models, evaluates each model for 1 batch,
-selects the 2 best models with the best fitness (lowest loss), and populates the next generation by uniquely crossing over and mutating the parent genes for each child. This process of reproduction is completed for the specified number of generations. The best performing model throughout evolution is saved as well as the initial and final populations. 
+selects the 2 best models with the best fitness (lowest loss), and populates the next generation by uniquely crossing over and mutating the parent genes for each child. This process of reproduction is completed for the specified number of generations. The best performing model throughout evolution is saved as well as the initial and final populations. Evolution can be modified by changing the number of models in the initial population, the number of generations, the number of offspring models per generation, and the genetic mutation rate. 
 ##### Plotting
 Each engine will contain different plotting functions relevant to the task as well as a heatmap and line plot to view the changes in weights of the different layers in the model. The robot and sine (3 inh neuron) engines contain plotting functions for violin plots that require loading in a trained backprop model for comparison. 
 
